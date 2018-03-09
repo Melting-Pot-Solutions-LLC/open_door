@@ -460,7 +460,7 @@ class MyProductController extends Controller
 						
 			$priceContent 	=	$price->max('products_price');
 			
-			if(count($priceContent)>0){
+			if($priceContent>0){
 				$maxPrice = $priceContent;	
 			}else{
 				$maxPrice = '';
